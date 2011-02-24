@@ -4,7 +4,7 @@ get '/thesusanne' do
   redirect 'http://thesusanne.com'
 end
 
-get 'w:q' do
+get 'w :q' do
   redirect "http://en.wikipedia.org/wiki/#{params[:q]}"
 end
 
