@@ -4,10 +4,10 @@ get '/thesusanne' do
   redirect 'http://thesusanne.com'
 end
 
-get %r{/w ([\w]+)} do |a|
+get %r{w ([\w]+)} do |a|
   redirect "http://en.wikipedia.org/wiki/#{a}"
 end
 
-get ':q' do
+get '/:q' do
   redirect "http://google.com/search?q=#{params[:q]}"
 end
