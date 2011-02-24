@@ -7,5 +7,5 @@ end
 
 
 get '/:q' do
-  redirect "http://google.com/search?q=#{params[:all]}"
+  redirect "http://google.com/search?q=#{params[:q]}"
 end
