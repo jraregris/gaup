@@ -4,6 +4,8 @@ get '/thesusanne' do
   redirect 'http://thesusanne.com'
 end
 
-get '/' do
-  redirect 'http://google.com'
+
+
+get '/:q' do
+  redirect "http://google.com/search?q=#{params[:all]}"
 end
