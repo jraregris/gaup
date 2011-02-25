@@ -1,4 +1,4 @@
-# -*- coding: undecided -*-
+# -*- coding: utf-8 -*-
 require 'sinatra'
 
 get '/' do
@@ -13,7 +13,7 @@ get '/saklig' do
   redirect 'http://saklig.no'
 end
 
-get %r{w ([\w]+)} do |a|
+get %r{ w (.+)} do |a|
   redirect "http://en.wikipedia.org/wiki/#{a}"
 end
 
