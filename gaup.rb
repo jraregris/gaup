@@ -1,7 +1,8 @@
+# -*- coding: undecided -*-
 require 'sinatra'
 
 get '/' do
-  "GAUP - Inner Search"
+  "GAUP – Inner Search"
 end
 
 get '/thesusanne' do
