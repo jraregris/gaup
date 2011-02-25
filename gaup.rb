@@ -13,7 +13,7 @@ get '/saklig' do
   redirect 'http://saklig.no'
 end
 
-get %r{ w (.+)} do |a|
+get %r{w (.+)} do |a|
   redirect "http://en.wikipedia.org/wiki/#{a}"
 end
 
