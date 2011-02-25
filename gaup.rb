@@ -1,7 +1,15 @@
 require 'sinatra'
 
+get '/' do
+  "GAUP - Inner Search"
+end
+
 get '/thesusanne' do
   redirect 'http://thesusanne.com'
+end
+
+get '/saklig' do
+  redirect 'http://saklig.no'
 end
 
 get %r{w ([\w]+)} do |a|
